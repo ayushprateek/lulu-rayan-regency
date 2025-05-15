@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:connectivity_plus/connectivity_plus.dart';
+// import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:http/http.dart' as http;
 import 'package:miesp/models/customer_model.dart';
 import 'package:miesp/models/item_details_model.dart';
@@ -17,18 +17,18 @@ import 'package:url_launcher/url_launcher.dart';
 // import 'package:url_launcher/url_launcher.dart';
 
 class ServiceManager {
-  static String baseURL = 'http://51.79.229.83:8080/API/';
+  static String baseURL = 'http://51.79.229.83:8081/API/';
   static Map<String, String>? header = {
     'accept': '*/*',
     'Content-Type': 'application/json'
   };
 
   static Future<bool> isInternetAvailable() async {
-    var connectivityResult = await Connectivity().checkConnectivity();
-    if (connectivityResult == ConnectivityResult.none) {
-      getErrorSnackBar('No Internet');
-      return false;
-    }
+    // var connectivityResult = await Connectivity().checkConnectivity();
+    // if (connectivityResult == ConnectivityResult.none) {
+    //   getErrorSnackBar('No Internet');
+    //   return false;
+    // }
     return true;
   }
 
