@@ -31,8 +31,8 @@ class LoginPageState extends State<LoginPage> {
   bool isLoading = false;
 
   // TextEditingController userEmail =
-  //     TextEditingController(text: 'rahul@punditz.in');
-  // TextEditingController password = TextEditingController(text: 'punditz@123');
+  //     TextEditingController(text: 'ashfaque@lulurayyan.com');
+  // TextEditingController password = TextEditingController(text: 'User@123');
   //
 
   TextEditingController userEmail = TextEditingController();

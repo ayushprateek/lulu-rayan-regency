@@ -6,7 +6,6 @@ import 'package:miesp/models/stock_count_request_model.dart';
 import 'package:miesp/models/stock_counting_detail_model.dart';
 import 'package:miesp/models/uom_model.dart';
 import 'package:miesp/services/service_manager.dart';
-import 'package:miesp/theme/custom_snack_bar.dart';
 import 'package:miesp/theme/custom_text_widgets.dart';
 import 'package:miesp/theme/elements_screen.dart';
 import 'package:miesp/theme/get_text_field.dart';
@@ -114,7 +113,8 @@ class _StockCountingState extends State<StockCounting> {
                                         });
                                   } else {
                                     if (_code.text.isEmpty) {
-                                      CustomSnackBar.errorSnackBar(
+
+                                      getErrorSnackBar(
                                           'Please enter item code');
                                     } else {
                                       ServiceManager.getStockCountingDetail(

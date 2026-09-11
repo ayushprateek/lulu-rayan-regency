@@ -13,16 +13,16 @@ dependencies:
   get: ^4.6.6
   win32: ^5.9.0
   shared_preferences: ^2.3.3
-  permission_handler: ^11.3.1
+  permission_handler: ^12.0.3
 #  connectivity_plus: ^6.1.4
   intl: ^0.20.0
-  google_fonts: ^6.2.1
+  google_fonts: ^8.2.1
 #  flutter_barcode_scanner: ^2.0.0
   mobile_scanner: ^6.0.2
-  device_info_plus: ^11.1.1
+  device_info_plus: ^12.4.0
   csv: ^6.0.0
 #  gallery_saver: ^2.3.2
-  tbib_downloader: ^2.2.0
+  tbib_downloader: 2.6.0-fix.1
   external_path: ^2.2.0
 #  path: ^1.8.2
 #  cupertino_icons: ^1.0.5
@@ -76,6 +76,10 @@ dev_dependencies:
   pedantic: ^1.11.1
   build_runner: ^2.1.11
   flutter_launcher_icons: ^0.13.1
+
+dependency_overrides:
+  tbib_downloader:
+    path: third_party/tbib_downloader
 
 flutter_launcher_icons:
   android: "launcher_icon"

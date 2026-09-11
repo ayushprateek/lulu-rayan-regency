@@ -17,7 +17,7 @@ import 'package:url_launcher/url_launcher.dart';
 // import 'package:url_launcher/url_launcher.dart';
 
 class ServiceManager {
-  static String baseURL = 'http://51.79.229.83:8081/API/';
+  static String baseURL = 'http://51.79.229.83:8080/API/';
   static Map<String, String>? header = {
     'accept': '*/*',
     'Content-Type': 'application/json'
@@ -235,7 +235,7 @@ class ServiceManager {
 //     if (onError != null) {
 //       onError(e.toString());
 //     }
-//     CustomSnackBar.errorSnackBar(e.toString());
+//     getErrorSnackBar(e.toString());
 //   }
 // }
 // static void updateCurrentLangCode(String locale) async {
